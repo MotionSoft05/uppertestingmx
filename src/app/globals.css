@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Estilos para el monitor */
+.monitor-wrapper {
+  width: 500px; /* Ancho del monitor */
+  height: 300px; /* Altura del monitor */
+  background-color: #000; /* Color del monitor (puedes cambiarlo) */
+  border-radius: 10px; /* Borde redondeado del monitor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para la pantalla del monitor */
+.monitor-screen {
+  width: 95%; /* Ancho de la pantalla del monitor */
+  height: 90%; /* Altura de la pantalla del monitor */
+  background-color: #fff; /* Color de fondo de la pantalla (puedes cambiarlo) */
+  border-radius: 5px; /* Borde redondeado de la pantalla */
+  overflow: hidden; /* Ocultar contenido que se desborde */
+  position: relative;
+}
+
+/* Ajusta los estilos del slider para que se ajuste a la pantalla del monitor */
+.fader {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fader__slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.fader img {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.single-image {
+  display: none; /* Oculta el contenedor cuando hay más de una imagen */
+}
+
+.single-image > img {
+  display: block; /* Muestra la imagen cuando hay solo una imagen */
+}
